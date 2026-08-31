@@ -1,0 +1,398 @@
+/* =========================
+   AUTH OVERLAY
+========================= */
+
+.auth-overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  /* Move auth box slightly downward */
+  align-items: flex-start;
+
+  padding-top: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  z-index: 20000;
+}
+
+
+/* =========================
+   AUTH BOX
+========================= */
+
+.auth-modal {
+  position: relative;
+
+  width: 480px;
+  max-width: 100%;
+
+  max-height: calc(100vh - 40px);
+
+  padding: 40px;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 0 30px rgba(0, 0, 0, 0.5);
+
+  backdrop-filter: blur(20px);
+
+  color: #fff;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-btn-modal {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 50px;
+  height: 50px;
+
+  background: #fff;
+
+  border: none;
+
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 18px;
+
+  font-size: 32px;
+
+  color: #222;
+
+  cursor: pointer;
+
+  z-index: 10;
+
+  transition: 0.3s;
+}
+
+
+.close-btn-modal:hover {
+  background: #fa5757;
+
+  color: #fff;
+}
+
+
+/* =========================
+   FORM BOX
+========================= */
+
+.form-box {
+  width: 100%;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.form-box h2 {
+  margin: 0 0 20px;
+
+  text-align: center;
+
+  font-size: 35px;
+
+  color: #fff;
+}
+
+
+/* =========================
+   INPUT BOX
+========================= */
+
+.input-box {
+  position: relative;
+
+  width: 100%;
+  height: 48px;
+
+  margin: 15px 0;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 50px 0 20px;
+
+  background: transparent;
+
+  border: 2px solid rgba(255, 255, 255, 0.8);
+
+  border-radius: 40px;
+
+  outline: none;
+
+  font-size: 16px;
+
+  color: #fff;
+
+  box-sizing: border-box;
+}
+
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+
+/* =========================
+   NORMAL ICON
+========================= */
+
+.input-box > i {
+  position: absolute;
+
+  right: 20px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  font-size: 20px;
+
+  color: #fff;
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   PASSWORD TOGGLE
+========================= */
+
+.password-toggle {
+  position: absolute;
+
+  right: 10px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  background: transparent;
+
+  border: none;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  z-index: 5;
+}
+
+
+/* Password icon */
+
+.password-toggle i {
+  position: static;
+
+  transform: none;
+
+  font-size: 21px;
+
+  color: #fff;
+
+  pointer-events: none;
+
+  transition: 0.2s;
+}
+
+
+/* Hover effect */
+
+.password-toggle:hover i {
+  transform: scale(1.15);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.form-box .btn {
+  width: 100%;
+  height: 48px;
+
+  margin-top: 5px;
+
+  background: #fff;
+
+  border: none;
+
+  border-radius: 40px;
+
+  color: #222;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+.form-box .btn:hover {
+  background: #fa5757;
+
+  color: #fff;
+}
+
+
+/* =========================
+   BOTTOM TEXT
+========================= */
+
+.form-box p {
+  margin: 20px 0 5px;
+
+  text-align: center;
+
+  font-size: 14.5px;
+
+  color: #fff;
+}
+
+
+/* =========================
+   SWITCH LINK
+========================= */
+
+.switch-link {
+  padding: 0;
+
+  background: transparent;
+
+  border: none;
+
+  color: #fff;
+
+  font-size: 14.5px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.switch-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   REGISTER FORM
+========================= */
+
+.form-box.register h2 {
+  margin-bottom: 15px;
+}
+
+
+.form-box.register .input-box {
+  height: 44px;
+
+  margin: 10px 0;
+}
+
+
+/* =========================
+   MODAL SCROLLBAR
+========================= */
+
+.auth-modal::-webkit-scrollbar {
+  width: 6px;
+}
+
+
+.auth-modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.auth-modal::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+
+  border-radius: 10px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 520px) {
+
+  .auth-overlay {
+    padding: 10px;
+  }
+
+
+  .auth-modal {
+    width: 100%;
+
+    max-height: calc(100vh - 20px);
+
+    padding: 35px 25px 25px;
+  }
+
+
+  .form-box h2 {
+    font-size: 30px;
+  }
+
+
+  .form-box.register .input-box {
+    height: 42px;
+
+    margin: 9px 0;
+  }
+
+
+  .password-toggle {
+    right: 8px;
+  }
+
+}

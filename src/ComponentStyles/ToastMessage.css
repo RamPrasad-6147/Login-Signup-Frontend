@@ -1,0 +1,108 @@
+/* ==============================
+   TOAST CONTAINER
+============================== */
+
+.Toastify__toast-container {
+  z-index: 30000 !important;
+}
+
+
+/* ==============================
+   TOAST
+============================== */
+.Toastify__toast {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+
+  border-radius: 14px;
+
+  min-width: 400px;
+  min-height: 70px;
+
+  padding: 18px 20px;
+}
+
+.Toastify__toast-body {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+/* ==============================
+   SUCCESS
+============================== */
+
+.Toastify__toast--success {
+  background: #2e7d32;
+  color: #fff;
+}
+
+
+/* ==============================
+   ERROR
+============================== */
+
+.Toastify__toast--error {
+  background: #d32f2f;
+  color: #fff;
+}
+
+
+/* ==============================
+   WARNING
+============================== */
+
+.Toastify__toast--warning {
+  background: #f57c00;
+  color: #fff;
+}
+
+
+/* ==============================
+   INFO
+============================== */
+
+.Toastify__toast--info {
+  background: #1976d2;
+  color: #fff;
+}
+
+
+/* ==============================
+   PROGRESS BAR
+============================== */
+
+.Toastify__progress-bar {
+  height: 4px;
+}
+
+
+/* ==============================
+   CLOSE BUTTON
+============================== */
+
+.Toastify__close-button {
+  color: #fff;
+  opacity: 1;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 520px) {
+
+  .Toastify__toast-container {
+    width: calc(100% - 20px);
+    left: 10px;
+    right: 10px;
+  }
+
+  .Toastify__toast {
+    min-width: unset;
+    font-size: 14px;
+  }
+
+}

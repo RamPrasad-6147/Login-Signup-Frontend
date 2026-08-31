@@ -1,0 +1,275 @@
+/* =========================
+   REGISTER FORM
+========================= */
+
+.form-box.register {
+  width: 100%;
+}
+
+
+/* =========================
+   REGISTER HEADING
+========================= */
+
+.form-box.register h2 {
+  margin: 0 0 15px;
+
+  font-size: 35px;
+
+  font-weight: 600;
+
+  text-align: center;
+
+  color: #fff;
+}
+
+
+/* =========================
+   INPUT BOX
+========================= */
+
+.form-box.register .input-box {
+  position: relative;
+
+  width: 100%;
+
+  height: 44px;
+
+  margin: 10px 0;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.form-box.register .input-box input {
+  width: 100%;
+
+  height: 100%;
+
+  padding: 0 50px 0 20px;
+
+  background: transparent;
+
+  border: 2px solid rgba(255, 255, 255, 0.8);
+
+  border-radius: 40px;
+
+  outline: none;
+
+  font-size: 16px;
+
+  color: #fff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+.form-box.register .input-box input::placeholder {
+  color: #fff;
+}
+
+
+/* =========================
+   NORMAL INPUT ICONS
+========================= */
+
+.form-box.register .input-box > i {
+  position: absolute;
+
+  right: 20px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  font-size: 20px;
+
+  color: #fff;
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   PASSWORD TOGGLE
+========================= */
+
+.form-box.register .password-toggle {
+  position: absolute;
+
+  right: 10px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 40px;
+
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0;
+
+  background: transparent;
+
+  border: none;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  z-index: 5;
+}
+
+
+/* =========================
+   PASSWORD TOGGLE ICON
+========================= */
+
+.form-box.register .password-toggle i {
+  position: static;
+
+  transform: none;
+
+  right: auto;
+
+  top: auto;
+
+  font-size: 21px;
+
+  color: #fff;
+
+  pointer-events: none;
+
+  transition: 0.2s;
+}
+
+
+/* =========================
+   PASSWORD ICON HOVER
+========================= */
+
+.form-box.register .password-toggle:hover i {
+  transform: scale(1.15);
+}
+
+
+/* =========================
+   REGISTER BUTTON
+========================= */
+
+.form-box.register .btn {
+  width: 100%;
+
+  height: 48px;
+
+  margin-top: 8px;
+
+  background: #fff;
+
+  border: none;
+
+  border-radius: 40px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: #222;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+/* =========================
+   REGISTER BUTTON HOVER
+========================= */
+
+.form-box.register .btn:hover {
+  background: #fa5757;
+
+  color: #fff;
+}
+
+
+/* =========================
+   BOTTOM TEXT
+========================= */
+
+.form-box.register p {
+  margin: 18px 0 5px;
+
+  text-align: center;
+
+  font-size: 14.5px;
+
+  color: #fff;
+}
+
+
+/* =========================
+   LOGIN LINK
+========================= */
+
+.form-box.register .login-link {
+  padding: 0;
+
+  background: transparent;
+
+  border: none;
+
+  color: #fff;
+
+  font-size: 14.5px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   LOGIN LINK HOVER
+========================= */
+
+.form-box.register .login-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 520px) {
+
+  .form-box.register h2 {
+    font-size: 30px;
+  }
+
+
+  .form-box.register .input-box {
+    height: 42px;
+
+    margin: 9px 0;
+  }
+
+
+  .form-box.register .password-toggle {
+    right: 8px;
+  }
+
+}
