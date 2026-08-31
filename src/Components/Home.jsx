@@ -19,7 +19,7 @@ function Home() {
         </h1>
 
         <p>
-          Smart Crops, Smart Choices With AgriSens!
+          Smart Crops, Smart Choices With AgriTech!
         </p>
 
         <a

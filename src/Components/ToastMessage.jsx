@@ -2,7 +2,6 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function ToastMessage() {
-
   return (
     <ToastContainer
       position="top-right"
@@ -13,6 +12,9 @@ function ToastMessage() {
       pauseOnHover
       draggable
       theme="colored"
+      style={{
+        zIndex: 999999,
+      }}
     />
   );
 }
