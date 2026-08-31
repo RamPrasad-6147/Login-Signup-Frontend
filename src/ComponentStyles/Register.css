@@ -40,7 +40,7 @@
 
 
 /* =========================
-   INPUT
+   NORMAL INPUT
 ========================= */
 
 .form-box.register .input-box input {
@@ -63,6 +63,8 @@
   color: #fff;
 
   box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
 }
 
 
@@ -93,6 +95,132 @@
   color: #fff;
 
   pointer-events: none;
+}
+
+
+/* ==================================================
+   COUNTRY / STATE / CITY DROPDOWNS
+================================================== */
+
+.form-box.register .location-select {
+  position: relative;
+
+  width: 100%;
+
+  height: 44px;
+
+  margin: 10px 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   SELECT
+========================= */
+
+.form-box.register .location-select select {
+  width: 100%;
+
+  height: 100%;
+
+  padding: 0 50px 0 20px;
+
+  background: transparent;
+
+  border: 2px solid rgba(255, 255, 255, 0.8);
+
+  border-radius: 40px;
+
+  outline: none;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  font-family: "Poppins", sans-serif;
+
+  color: #fff;
+
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  appearance: none;
+
+  -webkit-appearance: none;
+
+  -moz-appearance: none;
+}
+
+
+/* =========================
+   DROPDOWN PLACEHOLDER
+========================= */
+
+.form-box.register
+.location-select select:invalid {
+  color: #fff;
+}
+
+
+/* =========================
+   DROPDOWN OPTIONS
+========================= */
+
+.form-box.register
+.location-select select option {
+  background: #34420f;
+
+  color: #fff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 15px;
+}
+
+
+/* =========================
+   DROPDOWN ICON
+========================= */
+
+.form-box.register .location-select > i {
+  position: absolute;
+
+  right: 20px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  font-size: 20px;
+
+  color: #fff;
+
+  pointer-events: none;
+
+  z-index: 2;
+}
+
+
+/* =========================
+   DISABLED DROPDOWN
+========================= */
+
+.form-box.register
+.location-select select:disabled {
+  color: rgba(255, 255, 255, 0.45);
+
+  cursor: not-allowed;
+}
+
+
+/* Disabled dropdown icon */
+
+.form-box.register
+.location-select select:disabled
++ i {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -186,6 +314,8 @@
 
   font-weight: 600;
 
+  font-family: "Poppins", sans-serif;
+
   color: #222;
 
   cursor: pointer;
@@ -216,6 +346,8 @@
 
   font-size: 14.5px;
 
+  font-family: "Poppins", sans-serif;
+
   color: #fff;
 }
 
@@ -237,6 +369,8 @@
 
   font-weight: 600;
 
+  font-family: "Poppins", sans-serif;
+
   cursor: pointer;
 }
 
@@ -250,9 +384,9 @@
 }
 
 
-/* =========================
+/* ==================================================
    MOBILE
-========================= */
+================================================== */
 
 @media (max-width: 520px) {
 
@@ -268,8 +402,99 @@
   }
 
 
+  .form-box.register .location-select {
+    height: 42px;
+
+    margin: 9px 0;
+  }
+
+
+  .form-box.register .input-box input {
+    padding: 0 48px 0 18px;
+
+    font-size: 15px;
+  }
+
+
+  .form-box.register
+  .location-select select {
+    padding: 0 48px 0 18px;
+
+    font-size: 15px;
+  }
+
+
+  .form-box.register .input-box > i {
+    right: 18px;
+
+    font-size: 19px;
+  }
+
+
+  .form-box.register
+  .location-select > i {
+    right: 18px;
+
+    font-size: 19px;
+  }
+
+
   .form-box.register .password-toggle {
     right: 8px;
+  }
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media (max-width: 380px) {
+
+  .form-box.register h2 {
+    font-size: 28px;
+  }
+
+
+  .form-box.register .input-box {
+    height: 40px;
+
+    margin: 8px 0;
+  }
+
+
+  .form-box.register .location-select {
+    height: 40px;
+
+    margin: 8px 0;
+  }
+
+
+  .form-box.register
+  .input-box input {
+    font-size: 14px;
+
+    padding-left: 17px;
+  }
+
+
+  .form-box.register
+  .location-select select {
+    font-size: 14px;
+
+    padding-left: 17px;
+  }
+
+
+  .form-box.register
+  .input-box > i,
+
+  .form-box.register
+  .location-select > i {
+    right: 17px;
+
+    font-size: 18px;
   }
 
 }
